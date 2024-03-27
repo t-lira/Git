@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia básico - Git</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+  <main>
+    <header class="header">
+      <ul class="navigation">
+        <li class="navigation--item">
+          <a href="#configuration" class="navigation--link">
+          Configurando
+          </a>
+        </li>
+        <li class="navigation--item">
+          <a href="#init" class="navigation--link">
+          Criando o projeto</a> 
+        </li>
+        <li class="navigation--item">
+          <a href="#clone" class="navigation--link">
+          Clonando um projeto</a> 
+        </li>
+        <li class="navigation--item">
+          <a href="" class="navigation--link">
+          Básico
+          </a>
+        </li>
+        <li class="navigation--item">
+          <a href="" class="navigation--link">
+          Branch e Merge
+          </a>
+        </li>
+        <li class="navigation--item">
+          <a href="" class="navigation--link">
+          Compartilhar e atualizar projetos
+          </a>
+        </li>
+        <li class="navigation--item">
+          <a href="" class="navigation--link">
+          Inspeção e Comparação
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <section class="section bg-color--01" id="configuration">
+      <h2>Configurando um usuário</h2>
+      <p>
+        A primeira coisa que você deve fazer quando instalar o Git é definir o seu nome de usuário e endereço de e-mail.
+      </p>
+      <div class="section--box">
+        <p class="cod">
+          git config --global user.name "Seu Nome"
+        </p>
+        <p class="cod">
+          git config --global user.email seu.email@email.com
+        </p>
+      </div>
+    </section>
+
+
+    <section class="section" id="init">
+      <h2>Criando um novo repositório</h2>
+      <p>
+        vá a pasta do projeto e use o comando git init para inicializar um novo repositório:
+      </p>
+      <div class="section--box">
+        <p class="cod">
+          git init
+        </p>
+      </div>
+    </section>
+
+    <section class="section bg-color--02" id="clone">
+      <h2>Clonando um repositório</h2>
+      <p>
+        Pra criar uma cópia de trabalho deum repositorio remoto para um repositorio local
+      </p>
+      <div class="section--box">
+        <p class="cod">
+          git clone &lt;URL&gt;
+        </p>
+      </div>
+
+      <p>
+        quando usar um servidor remoto, seu comando será
+      </p>
+      <div class="section--box">
+        <p class="cod">
+          git clone usuário@servidor:/caminho/para/o/repositório
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="configuration">
+      <h2>Enviando arquivos</h2>
+      <p>
+        Esse comando irá adicionar todos os arquivos novos e/ou modificados ao repositório. O arquivo passa de Working Directory para o Staging.
+      </p>
+      <div class="section--box">
+        <p class="cod">
+          git add.
+        </p>
+      </div>
+      <p>
+        Esse comando irá adicionar o arquivo em específico ao repositório
+      </p>
+      <div class="section--box">
+        <p class="cod">
+          git add &lt;Nome do arquivo&gt;
+        </p>
+      </div>
+    </section>
+
+    <section class="section bg-color--01" id="init">
+      <h2>adicionar & confirmar</h2>
+      <p>
+        Mover um arquivo do Staging para o Repository
+      </p>
+      <div class="section--box">
+        <p class="cod">
+          git commit -m "comentários das alterações"
+        </p>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

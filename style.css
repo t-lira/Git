@@ -1,0 +1,63 @@
+:root{
+  --color-1:#5da7ad;
+  --color-2:#214e52;
+  --color-3:#CACACA;
+  --color-4:#878787;
+  --color-5:#202022;
+}
+
+/*Header*/
+.header{
+  
+}
+/*Navigation*/
+.navigation{
+
+}
+.navigation--item{
+  
+}
+.navigation--link{
+  
+}
+
+.bg-color--01{
+  background-color: var(--color-4);
+  color: #fff;
+}
+
+.bg-color--02{
+  background-color: var(--color-1);
+  color: #fff;
+}
+
+
+.cod{
+  background-color: var(--color-5);
+  color: #fff;
+  margin: 1rem 0 1rem 0;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+/*section*/
+.section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+/*text*/
+
+.section h2{
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+}
+
+.section p{
+  font-size: 1.3rem;
+}

@@ -2,25 +2,22 @@
   --color-1:#5da7ad;
   --color-2:#214e52;
   --color-3:#CACACA;
-  --color-4:#878787;
+  --color-4:#b4b0b0;
   --color-5:#202022;
 }
 
 /*Header*/
 .header{
-  
-}
-/*Navigation*/
-.navigation{
-
-}
-.navigation--item{
-  
-}
-.navigation--link{
-  
+  padding: 2rem;
 }
 
+.header h1{
+  text-align: center;
+  color: var(--color-2);
+  font-size: 2.5rem;
+}
+
+/*Backgrond*/
 .bg-color--01{
   background-color: var(--color-4);
   color: #fff;
@@ -30,7 +27,6 @@
   background-color: var(--color-1);
   color: #fff;
 }
-
 
 .cod{
   background-color: var(--color-5);
@@ -48,7 +44,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  height: 70vh;
 }
 
 /*text*/
@@ -60,4 +56,9 @@
 
 .section p{
   font-size: 1.3rem;
+}
+
+span{
+  font-weight: 700;
+  color: rgb(138, 26, 26);
 }

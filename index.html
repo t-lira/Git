@@ -11,44 +11,10 @@
 <body>
   <main>
     <header class="header">
-      <ul class="navigation">
-        <li class="navigation--item">
-          <a href="#configuration" class="navigation--link">
-          Configurando
-          </a>
-        </li>
-        <li class="navigation--item">
-          <a href="#init" class="navigation--link">
-          Criando o projeto</a> 
-        </li>
-        <li class="navigation--item">
-          <a href="#clone" class="navigation--link">
-          Clonando um projeto</a> 
-        </li>
-        <li class="navigation--item">
-          <a href="" class="navigation--link">
-          Básico
-          </a>
-        </li>
-        <li class="navigation--item">
-          <a href="" class="navigation--link">
-          Branch e Merge
-          </a>
-        </li>
-        <li class="navigation--item">
-          <a href="" class="navigation--link">
-          Compartilhar e atualizar projetos
-          </a>
-        </li>
-        <li class="navigation--item">
-          <a href="" class="navigation--link">
-          Inspeção e Comparação
-          </a>
-        </li>
-      </ul>
+      <h1>Guia básico - Git</h1>
     </header>
 
-    <section class="section bg-color--01" id="configuration">
+    <section class="section bg-color--02" id="configuration">
       <h2>Configurando um usuário</h2>
       <p>
         A primeira coisa que você deve fazer quando instalar o Git é definir o seu nome de usuário e endereço de e-mail.
@@ -65,28 +31,23 @@
 
 
     <section class="section" id="init">
-      <h2>Criando um novo repositório</h2>
+      <h2>Criando um repositório</h2>
       <p>
-        vá a pasta do projeto e use o comando git init para inicializar um novo repositório:
+        Criando um novo repositório local
       </p>
       <div class="section--box">
         <p class="cod">
           git init
         </p>
       </div>
-    </section>
-
-    <section class="section bg-color--02" id="clone">
-      <h2>Clonando um repositório</h2>
       <p>
-        Pra criar uma cópia de trabalho deum repositorio remoto para um repositorio local
+        Clonando um repositorio remoto já existente
       </p>
       <div class="section--box">
         <p class="cod">
           git clone &lt;URL&gt;
         </p>
       </div>
-
       <p>
         quando usar um servidor remoto, seu comando será
       </p>
@@ -97,10 +58,10 @@
       </div>
     </section>
 
-    <section class="section" id="configuration">
-      <h2>Enviando arquivos</h2>
+    <section class="section bg-color--01" id="configuration">
+      <h2>Adicionar & Confirmar</h2>
       <p>
-        Esse comando irá adicionar todos os arquivos novos e/ou modificados ao repositório. O arquivo passa de Working Directory para o Staging.
+        Esse comando irá adicionar todos os arquivos novos e/ou modificados a <span>Staging</span> . 
       </p>
       <div class="section--box">
         <p class="cod">
@@ -108,19 +69,15 @@
         </p>
       </div>
       <p>
-        Esse comando irá adicionar o arquivo em específico ao repositório
+        Esse comando irá adicionar um arquivo em específico a <span>Staging</span> . 
       </p>
       <div class="section--box">
         <p class="cod">
           git add &lt;Nome do arquivo&gt;
         </p>
       </div>
-    </section>
-
-    <section class="section bg-color--01" id="init">
-      <h2>adicionar & confirmar</h2>
       <p>
-        Mover um arquivo do Staging para o Repository
+        Mover um arquivo da Staging para o <span>Local Repository</span> 
       </p>
       <div class="section--box">
         <p class="cod">
@@ -129,6 +86,37 @@
       </div>
     </section>
 
+    <section class="section " id="init">
+      <h2>Observe seu repositório</h2>
+      <p>
+        O comando lhe mostra em qual branch você se encontra. 
+      </p>
+      <div class="section--box">
+        <p class="cod">
+          git status
+        </p>
+
+        <p>
+          Mostra as linhas exatas que foram adicionadas e removidas 
+        </p>
+        <div class="section--box">
+          <p class="cod">
+            git diff
+          </p>
+      </div>
+    </section>
+
+    <section class="section bg-color--02" id="init">
+      <h2>Enviando alterações</h2>
+      <p>
+        Mover um arquivo do Local Remote para o <span>Remote Repository</span> 
+      </p>
+      <div class="section--box">
+        <p class="cod">
+          git push
+        </p>
+      </div>
+    </section>
   </main>
 </body>
 </html>

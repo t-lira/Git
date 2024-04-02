@@ -1,8 +1,8 @@
 :root{
-  --color-1:#5da7ad;
+  --color-1:#06406C;
   --color-2:#214e52;
-  --color-3:#CACACA;
-  --color-4:#b4b0b0;
+  --color-3:red;
+  --color-4:#338FD4;
   --color-5:#202022;
 }
 
@@ -44,17 +44,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  min-height: 70vh;
+  padding: 1rem;
 }
 
 /*text*/
 
-.section h2{
+.section > h2{
   font-size: 2rem;
   margin: 0 0 1rem 0;
+  text-align: center;
 }
 
-.section p{
+.section > p{
   font-size: 1.3rem;
 }
 

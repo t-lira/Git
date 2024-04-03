@@ -14,19 +14,32 @@
       <h1>Guia básico - Git</h1>
     </header>
 
-    <section class="section bg-color--02" id="configuration">
-      <h2>Configurando um usuário</h2>
-   
+    <section class="section bg-color--01" id="configuration">
+      <h2>
+        Configurando um usuário
+      </h2>
+
+      <p>
+        Este comando define globalmente o nome do usuário que será associado aos commits feitos no Git.
+      </p>
+
       <div class="section--box">
         <p class="cod">
           git config --global user.name "Seu Nome"
         </p>
+      </div>
+
+      <p>
+        Este comando define globalmente o email do usuário que será associado aos commits feitos no Git. 
+      </p>
+      <div class="section--box">
         <p class="cod">
           git config --global user.email seu.email@email.com
         </p>
       </div>
+
       <p>
-        Verificar as informações
+        Verificar todas as informações de configuração:
       </p>
       <div class="section--box">
         <p class="cod">
@@ -41,8 +54,11 @@
     </section>
 
 
-    <section class="section" id="init">
-      <h2>Criando um repositório</h2>
+    <section class="section bg-color--02" id="init">
+      <h2>
+        Criando um repositório
+      </h2>
+
       <p>
         Inicializa um novo repositório Git localmente no diretório atual.
       </p>
@@ -51,6 +67,7 @@
           git init
         </p>
       </div>
+
       <p>
         Clona um repositorio remoto já existente, para o diretório local.
       </p>
@@ -59,36 +76,42 @@
           git clone &lt;URL&gt;
         </p>
       </div>
+
       <p>
-        quando usar um servidor remoto, seu comando será
+        Clonar um repositório remoto usando um servidor remoto.
       </p>
       <div class="section--box">
         <p class="cod">
-          git clone usuário@servidor:/caminho/para/o/repositório
+          git clone usuário@servidor: &lt;URL&gt;
         </p>
       </div>
     </section>
 
-    <section class="section bg-color--01" id="configuration">
-      <h2>Adicionar & Confirmar</h2>
+    <section class="section bg-color--03" id="configuration">
+      <h2>
+        Adicionar & Confirmar
+      </h2>
+
       <p>
-        Esse comando irá adicionar todos os arquivos novos e/ou modificados a <span>Staging</span> . 
+        Esse comando irá adicionar todos os arquivos novos e/ou modificados ao <span>Staging</span> . 
       </p>
       <div class="section--box">
         <p class="cod">
-          git add.
+          git add .
         </p>
       </div>
+
       <p>
-        Esse comando irá adicionar um arquivo em específico a <span>Staging</span> . 
+        Esse comando irá adicionar um arquivo em específico ao <span>Staging</span> . 
       </p>
       <div class="section--box">
         <p class="cod">
           git add &lt;Nome do arquivo&gt;
         </p>
       </div>
+
       <p>
-        Mover um arquivo da Staging para o <span>Repositório local</span> 
+        Mover um arquivo do Staging para o <span>Repositório local</span> 
       </p>
       <div class="section--box">
         <p class="cod">
@@ -97,8 +120,11 @@
       </div>
     </section>
 
-    <section class="section " id="init">
-      <h2>Observe seu repositório</h2>
+    <section class="section bg-color--01" id="init">
+      <h2>
+        Observe seu repositório
+      </h2>
+
       <p>
         Exibe o estado atual do repositório, incluindo arquivos modificados, adicionados e confirmados.
       </p>
@@ -123,10 +149,22 @@
             git log
           </p>
         </div>
+
+        <p>
+          Este comando exibirá cada commit em uma única linha, com apenas o hash do commit e a mensagem.
+        </p>
+          <div class="section--box">
+            <p class="cod">
+              git log --oneline
+            </p>
+          </div>
     </section>
 
     <section class="section bg-color--02" id="init">
-      <h2>Enviando alterações</h2>
+      <h2>
+        Enviando alterações
+      </h2>
+
       <p>
         Mover um arquivo do repositório local para, o <span>repositório remoto</span> 
       </p>
@@ -135,25 +173,33 @@
           git push
         </p>
       </div>
-
-
     </section>    
     
-    
-    
-    <section class="section" id="init">
-      <h2>Ramificando</h2>
+    <section class="section bg-color--03" id="init">
+      <h2>
+        Criar/Mudar/Excluir uma Branch
+      </h2>
+
       <p>
-        Para criar uma nova branch em um repositório Git, você pode usar o comando 
+        Para criar uma nova branch em um repositório Git
       </p>
       <div class="section--box">
         <p class="cod">
-          git checkout -b minha-nova-feature
+          git branch minha-nova-feature
         </p>
       </div>
 
       <p>
-        Para retornar para a branch master, você pode usar o comando
+        Para entrar na nova branch minha-nova-feature:
+      </p>
+      <div class="section--box">
+        <p class="cod">
+          git checkout minha-nova-feature
+        </p>
+      </div>
+
+      <p>
+        Para retornar para a branch master/Main:
       </p>
       <div class="section--box">
         <p class="cod">
@@ -162,33 +208,50 @@
       </div>
 
       <p>
-        Para remover uma branch no Git, você pode utilizar o comando 
+        Para remover uma branch no Git: 
       </p>
       <div class="section--box">
         <p class="cod">
           git branch -d minha-nova-feature
         </p>
       </div>
+    </section>
+
+    <section class="section bg-color--01" id="init">
+      <h2>
+        Mesclar uma branch em outra
+      </h2>
 
       <p>
-        Para tornar uma branch disponível para outros colaboradores de um repositório Git remoto, você precisa primeiro garantir que a branch tenha sido enviada para o repositório remoto.
+        Primeiro, mude para a branch de destino:
+      </p>
+      <div class="section--box">
+        <p class="cod">
+          git checkout main
+        </p>
+      </div>
+
+      <p>Em seguida, mescle a branch "minha-nova-feature" na branch atual:</p>
+      <div class="section--box">
+        <p class="cod">
+          git merge minha-nova-feature
+        </p>
+      </div>
+
+      <p>
+        Disponibilizar uma branch para outros colaboradores em um repositório Git remoto:
       </p>
       <div class="section--box">
         <p class="cod">
           git push origin minha-nova-feature
         </p>
       </div>
-
     </section>
 
-
-    <section class="section bg-color--01" id="init">
-      <h2>Atualizar & Mesclar</h2>
-
-      <p>
-        Atualizar e mesclar um repositório Git envolve normalmente duas operações principais: 
-      </p>
-
+    <section class="section bg-color--02" id="init">
+      <h2>
+        Atualizar 
+      </h2>
 
       <p>
         obter as últimas atualizações de um repositório remoto
@@ -198,18 +261,7 @@
           git pull
         </p>
       </div>
-
-      <p>
-        mesclar essas atualizações com a sua branch local.
-      </p>
-      <div class="section--box">
-        <p class="cod">
-          git merge &lt;nome_da_branch&gt;
-        </p>
-      </div>
     </section>
-
-
   </main>
 </body>
 </html>
